@@ -1,0 +1,17 @@
+{
+  "title": "Character turnaround, then motion that stays on model",
+  "technique": "reference image: a turnaround sheet keeps the character consistent",
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "shots": [
+    {
+      "id": "street-dance",
+      "mode": "reference",
+      "keyframes": [
+        {"prompt": "Character turnaround sheet of a young street dancer: front, three-quarter, side and back views in one row, full body, neutral pose, identical outfit in every view: oversized orange windbreaker, black cargo pants, white high-top sneakers, silver headphones around the neck. Plain light grey background, no labels. 21:9 composition.", "size": "2048x878"}
+      ],
+      "video_prompt": "The dancer from @Image 1, same face and outfit, performs a confident hip-hop routine on a night city rooftop: a few groove steps, a spin, then freezes and points at the camera. Handheld camera circling slowly, neon signs behind. A punchy hip-hop beat with sneaker squeaks.",
+      "duration": 10
+    }
+  ]
+}

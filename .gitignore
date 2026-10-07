@@ -1,10 +1,6 @@
-.venv/
 __pycache__/
-*.py[cod]
-.env
-.env.*
-!.env.example
-node_modules/
-dist/
-coverage/
 .pytest_cache/
+.env
+runs/
+*.mp4
+.DS_Store

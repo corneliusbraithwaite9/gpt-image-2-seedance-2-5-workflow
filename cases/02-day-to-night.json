@@ -1,0 +1,18 @@
+{
+  "title": "Same street, day into night",
+  "technique": "first + last frame, the last frame made as an edit of the first",
+  "resolution": "720p",
+  "style": "Photorealistic, 35mm lens, eye-level, static tripod framing.",
+  "shots": [
+    {
+      "id": "street",
+      "mode": "first_last",
+      "keyframes": [
+        {"prompt": "A narrow cobbled street in an old European town at midday, cafe tables on the left, flower boxes under the windows, a bicycle leaning on a lamppost. 16:9 composition.", "size": "2048x1152"},
+        {"prompt": "The same street, same framing and every object in the same place, now at blue hour: warm lights on in the windows and the lamppost, cafe tables lit by string lights, wet cobbles reflecting the lights. 16:9 composition.", "size": "2048x1152", "edit_of": 1}
+      ],
+      "video_prompt": "Time-lapse from midday to blue hour on a fixed camera. Shadows stretch and cross the street, the sky cools, windows and the lamppost light up one by one, a few passers-by blur through. Light city ambience, a distant church bell near the end.",
+      "duration": 10
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Product hero: still to slow orbit",
+  "technique": "first frame",
+  "resolution": "720p",
+  "style": "Premium product photography, matte black seamless backdrop, one soft key light from the upper left, thin rim light, crisp reflections, no text, no logos.",
+  "shots": [
+    {
+      "id": "orbit",
+      "mode": "first_frame",
+      "keyframes": [
+        {"prompt": "A brushed-steel wireless earbud case, lid half open, standing on a low black acrylic plinth, centered with empty space on both sides. 16:9 composition.", "size": "2048x1152"}
+      ],
+      "video_prompt": "The camera orbits slowly a quarter turn to the right around the earbud case, keeping it centered. The lid opens the rest of the way at the halfway point and a soft blue status light comes on. Reflections slide across the steel. Quiet ambient hum, one soft click when the lid stops.",
+      "duration": 8
+    }
+  ]
+}

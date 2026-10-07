@@ -1,0 +1,29 @@
+{
+  "title": "Three-shot anime opening, drafted at 480p",
+  "technique": "several first-frame shots, cheap tier first, joined afterwards",
+  "resolution": "480p",
+  "style": "Anime key visual, cel shading, bold clean lines, saturated sunset palette, cinematic lighting.",
+  "shots": [
+    {
+      "id": "op-1",
+      "mode": "first_frame",
+      "keyframes": [{"prompt": "A girl with a red scarf stands on a rooftop water tank at sunset, wind in her hair, the city below. 16:9 composition.", "size": "2048x1152"}],
+      "video_prompt": "Low-angle camera rises past her as the scarf and hair whip in the wind, lens flare from the setting sun. Rising guitar intro.",
+      "duration": 5
+    },
+    {
+      "id": "op-2",
+      "mode": "first_frame",
+      "keyframes": [{"prompt": "The same girl running along a train platform as a train pulls in, motion lines, petals in the air. 16:9 composition.", "size": "2048x1152"}],
+      "video_prompt": "Tracking shot alongside her as she runs, the train blurring past, petals swirling. Driving drums.",
+      "duration": 5
+    },
+    {
+      "id": "op-3",
+      "mode": "first_frame",
+      "keyframes": [{"prompt": "Close-up of the same girl turning to look over her shoulder, determined expression, the sky full of paper lanterns. 16:9 composition.", "size": "2048x1152"}],
+      "video_prompt": "Slow push-in on her face as she turns and smiles, lanterns drifting upward. The music hits the chorus.",
+      "duration": 5
+    }
+  ]
+}

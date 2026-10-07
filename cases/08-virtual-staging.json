@@ -1,0 +1,18 @@
+{
+  "title": "Empty room to furnished room",
+  "technique": "first + last frame; the staged room is an edit of the empty one",
+  "resolution": "720p",
+  "style": "Real-estate photography, wide 16mm lens, eye-level, bright natural daylight, true-to-life colors.",
+  "shots": [
+    {
+      "id": "living-room",
+      "mode": "first_last",
+      "keyframes": [
+        {"prompt": "An empty, freshly painted living room with oak floors, a large window on the left and a fireplace on the back wall. 16:9 composition.", "size": "2048x1152"},
+        {"prompt": "The same living room, same walls, window, fireplace and camera position, now furnished in Scandinavian style: a light grey sofa facing the fireplace, a round oak coffee table, a wool rug, two plants and a floor lamp. 16:9 composition.", "size": "2048x1152", "edit_of": 1}
+      ],
+      "video_prompt": "Slow dolly forward into the room while the furniture appears piece by piece: the rug unrolls, the sofa and table settle into place, plants and the lamp fade in. Soft room tone and gentle piano.",
+      "duration": 8
+    }
+  ]
+}

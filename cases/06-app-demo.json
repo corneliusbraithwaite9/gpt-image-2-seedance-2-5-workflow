@@ -1,0 +1,20 @@
+{
+  "title": "App demo from three generated screens",
+  "technique": "reference images: three UI mockups in one clip",
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "style": "Clean mobile UI mockup, light theme, rounded cards, one accent color #2E7D5B, realistic iPhone-style frame, plain background.",
+  "shots": [
+    {
+      "id": "habit-app",
+      "mode": "reference",
+      "keyframes": [
+        {"prompt": "Screen 1 of a habit-tracking app: a greeting at the top and a list of five habits with circular progress rings. 9:16 composition.", "size": "1152x2048"},
+        {"prompt": "Screen 2 of the same habit-tracking app: a monthly calendar heatmap in the accent green with a streak counter. 9:16 composition.", "size": "1152x2048"},
+        {"prompt": "Screen 3 of the same habit-tracking app: a celebration card for a 30-day streak with confetti. 9:16 composition.", "size": "1152x2048"}
+      ],
+      "video_prompt": "A hand holds a phone against a soft pastel background and swipes through the app: it starts on the screen in @Image 1, swipes to @Image 2, then taps to reveal @Image 3 as confetti bursts. Smooth, bright, upbeat. Light UI taps and a short cheerful synth jingle.",
+      "duration": 10
+    }
+  ]
+}

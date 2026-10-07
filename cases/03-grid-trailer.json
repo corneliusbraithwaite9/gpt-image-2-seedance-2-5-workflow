@@ -1,0 +1,17 @@
+{
+  "title": "Nine-panel storyboard grid as one reference",
+  "technique": "reference image: a 3x3 storyboard sheet guides a multi-shot clip",
+  "resolution": "720p",
+  "aspect_ratio": "16:9",
+  "shots": [
+    {
+      "id": "trailer",
+      "mode": "reference",
+      "keyframes": [
+        {"prompt": "A storyboard sheet: a 3 by 3 grid of nine equal cinematic panels, thin white gutters, no text or numbers. A lone lighthouse keeper on a stormy island. Panels in reading order: 1 wide shot of the lighthouse in a storm; 2 the keeper climbing the spiral stairs with a lantern; 3 close-up of his weathered hands on the lamp; 4 the beam sweeping over black waves; 5 a small fishing boat tossed by waves; 6 the keeper spotting it through a telescope; 7 him pulling a signal lever; 8 the boat turning toward the beam; 9 dawn, calm sea, the boat moored below the lighthouse. Consistent character, moody teal and amber palette. 16:9 composition.", "size": "2048x1152"}
+      ],
+      "video_prompt": "Follow the nine panels of @Image 1 in order as nine quick shots with hard cuts, keeping the keeper, the lighthouse and the teal and amber palette consistent. Storm wind and crashing waves, a low string drone that resolves into calm at the dawn shot.",
+      "duration": 15
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Food macro at 1080p",
+  "technique": "first frame, rendered at 1080p",
+  "resolution": "1080p",
+  "style": "Food photography, 100mm macro lens, shallow depth of field, warm tungsten key light, dark wooden table.",
+  "shots": [
+    {
+      "id": "ramen",
+      "mode": "first_frame",
+      "keyframes": [
+        {
+          "prompt": "A steaming bowl of tonkotsu ramen seen from a low angle: chashu slices, a halved soft egg with an amber yolk, scallions, nori, chopsticks resting on the rim. 16:9 composition.",
+          "size": "2048x1152"
+        }
+      ],
+      "video_prompt": "Slow push-in toward the egg as chopsticks lift a strand of noodles that drips broth back into the bowl. Steam curls through the light. Gentle bubbling and a soft slurp.",
+      "duration": 6
+    }
+  ]
+}
