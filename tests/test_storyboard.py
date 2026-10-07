@@ -32,6 +32,7 @@ class FakeApi:
     def __call__(self, request, timeout=None):
         method, url = request.get_method(), request.full_url
         body = request.data
+        assert request.get_header("User-agent") == storyboard.USER_AGENT, url
         self.calls.append((method, url, body))
         if url.endswith("/images/generations") or url.endswith("/images/edits"):
             return FakeResponse(json.dumps({"data": [{"b64_json": base64.b64encode(PNG).decode()}]}).encode())

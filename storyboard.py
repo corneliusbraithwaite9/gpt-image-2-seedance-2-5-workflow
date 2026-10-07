@@ -27,6 +27,8 @@ MODES = ("text", "first_frame", "first_last", "reference")
 KEYFRAMES_PER_MODE = {"text": (0, 0), "first_frame": (1, 1), "first_last": (2, 2), "reference": (1, 30)}
 MEDIA_URL_LIFETIME = 6 * 24 * 3600   # media_url is readable for 7 days; refresh a day early
 PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
+# Some CDNs refuse the default "Python-urllib" agent with a 403, so every request names the client.
+USER_AGENT = "storyboard-pipeline/1.0"
 
 
 class PipelineError(RuntimeError):
@@ -106,6 +108,7 @@ class Api:
         request = urllib.request.Request(self.base_url + path, method=method,
                                          data=json.dumps(body).encode() if body is not None else None)
         request.add_header("Authorization", f"Bearer {self.api_key}")
+        request.add_header("User-Agent", USER_AGENT)
         if body is not None:
             request.add_header("Content-Type", "application/json")
         try:
@@ -134,6 +137,7 @@ class Api:
                  f"Content-Type: {content_type}\r\n\r\n").encode() + reference + f"\r\n--{boundary}--\r\n".encode()
         request = urllib.request.Request(self.base_url + "/images/edits", data=bytes(body), method="POST")
         request.add_header("Authorization", f"Bearer {self.api_key}")
+        request.add_header("User-Agent", USER_AGENT)
         request.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
         try:
             with urllib.request.urlopen(request, timeout=600) as response:
@@ -152,6 +156,7 @@ class Api:
                                                       "content_type": content_type, "size_bytes": len(data)})
         put = urllib.request.Request(ticket["upload_url"], data=data, method="PUT")
         put.add_header("Content-Type", content_type)   # must match the ticket exactly
+        put.add_header("User-Agent", USER_AGENT)
         urllib.request.urlopen(put, timeout=300).close()
         return ticket["media_url"]
 
